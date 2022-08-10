@@ -12,10 +12,12 @@ public class cs : MonoBehaviour
 
     string villainName = "venom ";
     int villainPower = 20;
-    float playerSpeed = 2.5;
+    float playerSpeed;
+    
     // Start is called before the first frame update
     void Start()
     {
+        SetSpeed(2.5f);
         print(" the hero name is " + heroName + " and the villain name is " + villainName);
         if (heroPower > villainPower)
         {
@@ -25,7 +27,7 @@ public class cs : MonoBehaviour
         {
             print(" and the villain is stronger ");
         }
-
+        
     }
 
 
